@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="برنامج كريم للياقة والقوة — جدول تمارين وتتبع الوزن والحضور">
+<title>برنامج كريم للياقة والقوة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="brand"><svg class="logo" viewBox="0 0 72 72" role="img" aria-label="شعار البرنامج"><rect width="72" height="72" rx="18" fill="#f28c28"/><rect x="8" y="31" width="56" height="10" rx="5" fill="#1b2a41"/><rect x="10" y="20" width="8" height="32" rx="3" fill="#fff"/><rect x="54" y="20" width="8" height="32" rx="3" fill="#fff"/><text x="36" y="43" font-size="26" font-weight="700" text-anchor="middle" fill="#fff" font-family="Arial">K</text></svg>
+    <div id="photo" class="ph" hidden></div></div>
+<h1>برنامج كريم للياقة والقوة</h1>
+<p>خمس حصص أسبوعيًا تجمع القوة والضخامة واللياقة وقوة القبضة، مع مباراة الخماسي يوم الخميس. تدرّج في الأوزان على 8 أسابيع.</p>
+<div class="chips"><span class="chip">5 حصص جيم</span><span class="chip">8 أسابيع</span><span class="chip">خماسي الخميس</span><span class="chip">الجمعة راحة</span></div>
+<nav><a href="#plan">جدول التمارين</a><a href="#track">تتبّعي</a><a href="#food">الأكل والتعافي</a></nav>
+</div></header>
+
+<main class="wrap">
+<section id="plan"><h2>جدول الأسبوع</h2>
+<div class="tabs" id="tabs"></div>
+<label for="wk">أوزاني لأسبوع:</label><select id="wk"></select>
+<div class="card wide"><p class="mut" id="goal"></p>
+<table class="tbl"><thead><tr><th>#</th><th>الصورة</th><th>التمرين</th><th>العضلة</th><th>المطلوب</th><th>الشرح</th><th>وزني (كجم)</th><th>التكرار / الأداء</th><th>أفضل وزن</th></tr></thead><tbody id="ex"></tbody></table></div>
+<p class="mut">اختر الأسبوع واكتب وزنك وتكراراتك في كل تمرين، وتُحفظ تلقائيًا ويمكنك تعديلها في أي وقت. راحة 2–3 دقائق بين التمارين الأساسية و60–120 ثانية بين تمارين العزل. توقف وأنت قادر على تكرارين إضافيين تقريبًا. عند ألم حاد أو تنميل أو دوخة أوقف التمرين.</p>
+</section>
+
+<section id="track"><h2>تتبّعي</h2>
+<div class="kpis">
+<div class="kpi"><b id="k1">—</b><span>الوزن الحالي (كجم)</span></div>
+<div class="kpi"><b id="k2">—</b><span>التغيّر منذ البداية (كجم)</span></div>
+<div class="kpi"><b id="k3">0%</b><span>نسبة الحضور (من 40 حصة)</span></div>
+<div class="kpi"><b id="k4">0</b><span>حصص منفذة</span></div>
+</div>
+<div class="two">
+<div class="card"><b>سجّل وزنك</b>
+<label for="d">التاريخ</label><input type="date" id="d">
+<label for="w">الوزن (كجم)</label><input type="number" id="w" step="0.1" min="30" max="250" inputmode="decimal">
+<p><button class="btn" id="save">حفظ</button> <button class="tab" id="undo">حذف آخر قياس</button></p>
+<p class="mut">البيانات محفوظة على جهازك فقط.</p></div>
+<div class="card"><b>تطور الوزن</b><div id="chart" style="margin-top:8px"></div></div>
+</div>
+<div class="card wide" style="margin-top:14px"><b>حضور الحصص (اضغط الخانة لتسجيل الحضور)</b>
+<table class="grid" id="att"></table></div>
+</section>
+
+<section id="food"><h2>الأكل والتعافي</h2>
+<div class="rest">
+<div class="card"><b>البروتين</b><p class="mut">حوالي 112–140 جم يوميًا موزعة على 3–5 وجبات: بيض وفراخ ولبن وجبنة قريش وبقوليات.</p></div>
+<div class="card"><b>الكربوهيدرات</b><p class="mut">رز وعيش وبطاطس وشوفان لدعم التمرين والخماسي. لا تقللها بشدة.</p></div>
+<div class="card"><b>النوم والتعافي</b><p class="mut">7–9 ساعات نوم. لو الوزن ثابت 2–3 أسابيع زوّد الأكل قليلًا.</p></div>
+</div></section>
+</main>
+<a id="wa" class="wa" hidden target="_blank" rel="noopener">واتساب</a>
+<footer>كريم — صاحب البرنامج<br><button class="tab" id="theme">الوضع الليلي / النهاري</button></footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
